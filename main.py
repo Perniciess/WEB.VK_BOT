@@ -28,12 +28,12 @@ def main():
         if event.type == VkBotEventType.MESSAGE_NEW:
             text = event.obj.message['text'].lower()
             user_id = event.obj.message['from_id']
-            if text == "start":
+            if text == "start" or text == 'начать' or text == 'старт':
                 send_message(user_id, "Здравствуйте!", keyboard)
             elif text == "помощь":
                 send_message(user_id, 'Мы обязательно Вам поможем')
             elif text == "сайт":
-                send_message(user_id, 'ссылка на сайт')
+                send_message(user_id, 'http://libraryonline1.herokuapp.com/')
 
 
 if __name__ == '__main__':

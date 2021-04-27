@@ -1,1 +1,1 @@
-web: python main.py
+hero bot: python main.py

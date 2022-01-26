@@ -4,10 +4,6 @@ from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 import random
 
 
-# Подключаемся к группе ВК через токен и id группы
-vk_session = vk_api.VkApi(token="12b349406b1adb283fe20cf9257cb915898c13d50973c24a6f25ac5266843c26b1362bf28f010868ad1b5")
-longpoll = VkBotLongPoll(vk_session, '111842379')
-
 
 # Функция для отправки сообщений
 def send_message(user_id, message, keyboard=None):
